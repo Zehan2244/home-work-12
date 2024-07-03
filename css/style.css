@@ -1,0 +1,558 @@
+/* common css */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --firstfont: "Poppins", sans-serif;
+    --secondfont: "PT Sans", sans-serif;
+    --firstcolor: #FFCC00;
+    --scndcolor: #353535;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body{
+    font-family: var(--firstfont)
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 1106px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.align-center{
+    align-items: center;
+}
+.btn{
+    background-color:var(--firstcolor);
+    padding: 16px 45px;
+    display: inline-block;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+    border: 1px solid var(--firstcolor);
+}
+.btn.out{
+    background-color: transparent;
+    color: var(--scndcolor);
+    border: 1px solid  var(--scndcolor);
+}
+
+/* common css ends */
+/* nav starts */
+
+
+nav .logo{
+    width: 30%
+}
+nav .menu{
+    width: 70%;
+    text-align: right;
+}
+
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+    font-weight: 500;
+    font-size: 15px;
+    color: var(--scndcolor);
+    text-transform: uppercase;
+    padding: 18px 22px 5px;
+    display: inline-block;
+    position: relative;
+}
+nav .menu ul li a::after{
+    content: '';
+    width: 0%;
+    height: 1px;
+    background-color: var(--scndcolor);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+nav .menu ul li:hover a::after{
+    width: 100%;
+}
+/* nav ends */
+/* hero  */
+#hero{
+    margin-top: 56px;
+    
+}
+
+
+#hero .herotxt{
+    width: 50%;
+}
+#hero .heroimg{
+    width: 50%;
+}
+#hero .herotxt h4{
+    font-weight: 400;
+    font-size: 24px;
+    color: var(--scndcolor);
+}
+#hero .herotxt h1{
+    font-family:var(--secondfont);
+    font-weight: 700;
+    font-size: 64px;
+    color: var(--scndcolor); 
+}
+#hero .herotxt p{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 180%;
+    color:var(--scndcolor);
+    padding-bottom: 45px;
+}
+#hero .herotxt ul li{
+    font-weight: 500;
+    font-size: 22px;
+    padding-top: 45px;
+    transition: 0.7s;
+    color: var(--scndcolor);
+}
+#hero .herotxt ul li a{
+    display: inline-block;
+    color:#000000;
+    width:40px;
+    height:40px;
+    margin-left: 25px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #F4F3F3;
+    text-align: center;
+    line-height: 40px;
+}
+#hero .mouse{
+    margin: auto;
+    text-align: center;
+    padding: 30px 0 100px 0;
+    font-size: 30px;
+    cursor: pointer;
+}
+/* hero ends */
+/* about me */
+#banner{
+    background-image: url(../images/Rectangle\ 49.jpg);
+    height: 556px;
+    background-size: cover;
+    background-position: center;
+}
+#banner .aboutImg{
+    width: 50%;
+    padding-top: 26px;
+}
+#banner .aboutTxt{
+    width: 50%;
+    text-align: left;
+    padding: 78px 0px 86px 34px;
+}
+#banner .aboutTxt h3{
+    font-family: var(--secondfont);
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--scndcolor);
+}
+
+#banner .aboutTxt p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+    margin: 26px 0 45px 0;
+    color: var(--scndcolor);
+}
+
+/* about me ends */
+
+/* card */
+#square .box{
+    width: calc(33.33% - 32px);
+    height: 367px;
+    margin: 151px 16px 0px 0px;
+    text-align: center;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    border-radius: 20px;
+    padding-top: 32px;
+    padding-bottom: 52px;
+    
+}
+#square .box h5{
+font-family: var(--scndcolor);
+font-weight: 600;
+font-size: 22px;
+line-height: 180%;
+text-align: center;
+color: #353535;
+}
+#square .box p{
+font-family: var(--scndcolor);
+font-weight: 400;
+font-size: 16px;
+line-height: 190%;
+text-align: center;
+color: #7a7a7a;
+}
+
+
+
+
+/* card end */
+/* big img */
+#branding{
+    background-image: url(../images/big.jpg);
+    height: 499px;
+    background-size: cover;
+    background-position: center;
+    margin: 165px 0px;
+    
+}
+#branding .phone{
+    width: 50%;
+    padding-top: 45px;
+    
+}
+#branding .band{
+    width: 50%;
+    text-align: left;
+    padding: 90px 0px 86px 34px;
+}
+#branding .band h3{
+font-family: var(--secondfont);
+font-weight: 700;
+font-size: 44px;
+color: var(--scndcolor);
+}
+#branding .band p{
+font-family: var(--firstfont);
+font-weight: 400;
+font-size: 18px;
+line-height: 190%;
+color: var(--scndcolor);
+}
+#branding .band .btn.out{
+    margin-top: 32px;
+}
+
+/* big img ends */
+/* help */
+#design{
+    margin-top: 147px;
+}
+#design .prothom{
+    width: 30%; 
+}
+#design .ditiyo{
+    width: 60%;
+    text-align: right;
+}
+#design .ditiyo h1{
+font-family: var(--secondfont);
+font-weight: 700;
+font-size: 50px;
+text-align: right;
+color: var(--scndcolor);
+}
+#design .ditiyo p{
+font-weight: 400;
+font-size: 20px;
+line-height: 190%;
+padding-top: 26px;
+text-align: right;
+color: var(--scndcolor);
+}
+#design .row{
+    justify-content: space-between;
+}
+#design .together{
+    display:flex;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    border-radius: 20px;
+    width: 380px;
+    margin-top: 20px;
+}
+#design .websyte{
+    margin: 18px 18px 18px 29px;
+}
+#design .subtxt{
+    margin: 18px 44px 0 0;
+}
+#design .subtxt h4{
+font-weight: 600;
+font-size: 18px;
+line-height: 180%;
+color:var(--scndcolor);
+}
+#design .subtxt p{
+font-weight: 500;
+font-size: 12px;
+line-height: 180%;
+color:var(--scndcolor)
+}
+#design .ditiyo .divide h2{
+    font-family: var(--secondfont);
+    font-weight: 700;
+    font-size: 40px;
+    color:var(--scndcolor);
+    padding-top: 32px;
+    margin-left: 410px
+}
+#design .ditiyo .divide p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    color:var(--scndcolor);
+    padding-top: 9px;
+}
+#design .ditiyo .dividetwo h2{
+    font-family: var(--secondfont);
+    font-weight: 700;
+    font-size: 40px;
+    color:var(--scndcolor);
+    padding-top: 32px
+}
+#design .ditiyo .dividetwo p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 180%;
+    color:var(--scndcolor);
+    padding-top: 9px
+}
+
+/* help ends */
+
+/* my work */
+#mywork h1{
+    text-align: center;
+    margin: 200px 0 79px 0;
+    font-weight: 700;
+    font-size: 50px;
+   color: var(--scndcolor);
+}
+#mywork .places{
+    width: 30%;
+    border-right: 1px dashed #7a7a7a;
+    position: relative;
+}
+#mywork .places::before{
+content:'';
+position: absolute;
+width: 42px;
+height: 42px;
+border: 1px dashed #7a7a7a;
+right: -22px;
+top: -43px;
+border-radius: 50%;
+background-color: #fff;
+}
+#mywork .places::after{
+    content:'';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #52AB70;
+    right: -10px;
+    top: -31px;
+    border-radius: 50%;
+}
+#mywork .row:nth-child(2) .places::after{
+    background-color: #f17676;
+
+}
+#mywork .row:nth-child(3) .places::after{
+    background-color: #ffd233;
+}
+#mywork .describe{
+    width: 60%;
+}
+#mywork .row{
+    justify-content: space-between;
+}
+#mywork .places h4{
+font-weight: 600;
+font-size: 24px;
+line-height: 180%;
+color: var(--scndcolor);
+
+}
+#mywork .places p{
+    padding-top: 16px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 180%;
+    color:#7a7a7a;
+}
+#mywork .describe h4{
+font-weight: 600;
+font-size: 24px;
+line-height: 180%;
+color: var(--scndcolor);
+}
+#mywork .describe p{
+font-weight: 400;
+font-size: 18px;
+line-height: 200%;
+color: #7a7a7a;
+}
+/* my work ends */
+/* expert */
+#expert{
+    margin-top: 310px;
+}
+#expert .skills{
+    width:50%
+}
+#expert .area{
+    width: 50%;
+}
+#expert .skills h1{
+font-family: var(--secondfont);
+font-weight: 700;
+font-size: 50px;
+color: var(--scndcolor);
+}
+#expert .skills p{
+font-family: var(--firstfont);
+font-weight: 400;
+font-size: 20px;
+line-height: 200%;
+color: #7a7a7a;
+}
+#expert .area img{
+display: block;
+ width: 70%;
+ margin-left: 130px;
+ margin-top: 51px;
+}
+#expert .photo{
+    padding-left: 130px;
+}
+#expert .button{
+font-family: var(--firstfont);
+font-weight: 500;
+font-size: 18px;
+line-height: 180%;
+color: var(--scndcolor);
+}
+/* expert ends */
+/* My services */
+#myservice{
+    background-color: #FFF7D5;
+    margin-top: 146px;
+}
+#myservice .common{
+    text-align: center;
+    
+}
+#myservice .common h1{
+font-family: var(--secondfont);
+font-weight: 700;
+font-size: 50px;
+text-align: center;
+color: var(--scndcolor);
+padding-top: 70px;
+}
+#myservice .common p{
+font-weight: 400;
+font-size: 18px;
+line-height: 180%;
+text-align: center;
+color: #7a7a7a;
+}
+#myservice .laptop{
+    width: calc(33.33% - 32px);
+    height: 422px;
+    margin: 99px 18px 103px 0px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    border-radius: 12px;
+    margin-top: 100px;
+    margin-bottom: 104px;
+}
+#myservice .laptop:hover{
+    transform: scale(1.1);
+    transition: 1.3s;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.06);
+    background: linear-gradient(151deg, #fc0 0%, #ffe476 98.84%);
+}
+#myservice .laptop img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 36px;
+}
+#myservice .laptop h4{
+font-family: var(--firstfont);
+font-weight: 600;
+font-size: 24px;
+line-height: 180%;
+text-align: center;
+color: var(--scndcolor);
+}
+#myservice .laptop p{
+font-family: var(--firstfont);
+font-weight: 400;
+font-size: 15px;
+line-height: 180%;
+text-align: center;
+color: #7a7a7a;
+}
+
+/* my services end */
+/* man  */
+#man{
+    padding-top: 103px;
+    background-color: #fbfbfb;
+}
+#man .import{
+    width: 50%;
+}
+#man .client{
+    width:50%;
+}
+#man .feedback h1{
+font-family: var(--secondfont);
+font-weight: 700;
+font-size: 50px;
+line-height: 135%;
+color: var(--scndcolor);
+}
+#man .feedback p{
+font-weight: 400;
+font-size: 18px;
+line-height: 180%;
+color: #7a7a7a;
+padding-bottom: 73px;
+}
+#man .client p{
+font-weight: 400;
+font-size: 20px;
+line-height: 200%;
+color: #7a7a7a;
+padding-top: 160px;
+padding-left: 91px;
+}
+#man .client h5{
+font-weight: 500;
+font-size: 24px;
+line-height: 200%;
+color: var(--scndcolor);
+padding-left: 91px;
+padding-top: 25px;
+}
+/* man ends */
